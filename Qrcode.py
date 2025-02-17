@@ -7,7 +7,7 @@ qr = qrcode.QRCode(version=5,error_correction=qrcode.constants.ERROR_CORRECT_H,b
 
 # note ERROR_CORRECT_H >> is a high level of error that can be corrected
 
-qr.add_data("https://www.linkedin.com/in/adarsh-salgaonkar-7949a42a8/") # this is varabile which store the data that we want to convert into QR code
+qr.add_data("https://www.hackerrank.com/profile/adarshsalgaonka2") # this is varabile which store the data that we want to convert into QR code
 
 qr.make(fit=True) # this is function that make the QR code
 
@@ -16,6 +16,6 @@ img = qr.make_image(fill_color="blue",back_color="white") # this is function tha
 # fill_color >> front color of QR code
 # back_color >> background color of QR code
 
-img.save("MyLinkdinQR.png") # this is function that save the image of QR code
+img.save("HackerRankQR.png") # this is function that save the image of QR code
 
 
